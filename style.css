@@ -18,6 +18,12 @@ a:hover {
     cursor: pointer;
 }
 
+.contrast { /* better color contrast for texts over images */
+    background: #FFFFFF;
+    border-radius: 10px;
+    padding: 5px;
+}
+
 #page-loading-blocs-notifaction {
     position: fixed;
     top: 0;
@@ -93,6 +99,7 @@ a:hover {
 .texture-paper::before {
     background: url("img/texture-paper.png");
     background-size: 280px 280px;
+    opacity: 0.5; /* less visible for better color contrast */
 }
 
 .b-parallax {
@@ -100,7 +107,7 @@ a:hover {
 }
 
 .d-bloc {
-    color: rgba(255, 255, 255, .7);
+    color: rgba(255, 255, 255, 0.9);
 }
 
 .d-bloc button:hover {
@@ -133,7 +140,7 @@ a:hover {
 .d-bloc h5 a,
 .d-bloc h6 a,
 .d-bloc p a {
-    color: rgba(255, 255, 255, .6);
+    color: rgb(255, 255, 255);
 }
 
 .d-bloc .a-btn:hover,
@@ -150,7 +157,7 @@ a:hover {
 .d-bloc h5 a:hover,
 .d-bloc h6 a:hover,
 .d-bloc p a:hover {
-    color: rgba(255, 255, 255, 1);
+    color: rgba(255, 255, 255, .6);
 }
 
 .d-bloc .navbar-toggle .icon-bar {
@@ -647,11 +654,14 @@ h5,
 h6,
 p,
 label,
-.btn,
-a {
+.btn {
     font-family: "helvetica";
     font-weight: 400;
-    color: #575757!important;
+    color: #222222!important;
+}
+
+.col-sm-1 a {
+    color: #FFFCFA;
 }
 
 .container {
@@ -677,7 +687,7 @@ a {
 }
 
 p {
-    font-size: 11px;
+    font-size: 14px; /* text easier to read */
 }
 
 .tight-width-whitespace {
@@ -686,7 +696,7 @@ p {
 }
 
 .h1 {
-    font-size: 20px;
+    font-size: 25px;
     font-family: "Open Sans";
 }
 
@@ -771,20 +781,20 @@ h4 {
 }
 
 .bgc-atomic-tangerine {
-    background-color: #F3976C;
+    background-color: #B5583C;
 }
 
 .tc-white {
-    color: #F3976C!important;
+    color: #B5583C!important;
 }
 
 .btn-atomic-tangerine {
-    background: #F3976C;
+    background: #B5583C;
     color: #FFFFFF!important;
 }
 
 .btn-atomic-tangerine:hover {
-    background: #c27956!important;
+    background: #853b19!important;
     color: #FFFFFF!important;
 }
 
@@ -797,7 +807,7 @@ h4 {
 }
 
 .ltc-atomic-tangerine {
-    color: #F3976C!important;
+    color: #B5583C!important;
 }
 
 .ltc-atomic-tangerine:hover {
@@ -818,11 +828,11 @@ h4 {
 }
 
 .bg-banniere {
-    background-image: url("img/illustration-webdesign-side.jpg");
+    background-image: url("img/illustration-webdesign-banniere.jpg");
 }
 
 .bg-presentation {
-    background-image: url("img/illustration-webdesign-top.jpg");
+    background-image: url("img/illustration-webdesign-presentation.jpg");
 }
 
 @media (max-width: 1024px) {
@@ -981,6 +991,7 @@ h4 {
     .bloc-xl,
     .bloc-lg {
         padding: 40px 0;
+        color:#FFFFFF;
     }
     .bloc-sm,
     .bloc-md {
