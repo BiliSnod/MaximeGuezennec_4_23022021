@@ -138,7 +138,7 @@ a:hover {
 .d-bloc h3 a,
 .d-bloc h4 a,
 .d-bloc h5 a,
-.d-bloc h6 a, {
+.d-bloc h6 a {
     color: rgb(255, 255, 255);
 }
 
@@ -465,11 +465,11 @@ nav .caret {
     color: #FFF;
     background: rgba(0, 0, 0, .3);
 }
-
+/* 
 button {
-    /* outline: none!important; */
+    outline: none!important; 
 }
-
+*/
 .btn-rd {
     border-radius: 40px;
 }
