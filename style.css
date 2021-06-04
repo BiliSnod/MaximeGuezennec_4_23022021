@@ -10,7 +10,7 @@ body {
 a,
 button {
     transition: all .3s ease-in-out;
-    outline: none!important;
+    /* outline: none!important; */
 }
 
 a:hover {
@@ -138,8 +138,7 @@ a:hover {
 .d-bloc h3 a,
 .d-bloc h4 a,
 .d-bloc h5 a,
-.d-bloc h6 a,
-.d-bloc p a {
+.d-bloc h6 a, {
     color: rgb(255, 255, 255);
 }
 
@@ -468,7 +467,7 @@ nav .caret {
 }
 
 button {
-    outline: none!important;
+    /* outline: none!important; */
 }
 
 .btn-rd {
