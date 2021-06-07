@@ -1411,7 +1411,7 @@ a {
 }
 
 .contrast a {
-    color: #953d23;
+    color: #883820;
 }
 
 .contrast a:focus,
@@ -1602,7 +1602,8 @@ h6 small {
 
 .h1,
 h1 {
-    font-size: 36px
+    font-size: 32px;
+    padding: 20px 0; /* better separation with text under */
 }
 
 .h2,
