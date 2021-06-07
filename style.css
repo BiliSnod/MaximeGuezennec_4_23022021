@@ -139,7 +139,7 @@ a:hover {
 .d-bloc h4 a,
 .d-bloc h5 a,
 .d-bloc h6 a {
-    color: rgb(255, 255, 255);
+    color: rgba(255, 255, 255, 0.1);
 }
 
 .d-bloc .a-btn:hover,
@@ -156,7 +156,8 @@ a:hover {
 .d-bloc h5 a:hover,
 .d-bloc h6 a:hover,
 .d-bloc p a:hover {
-    color: rgba(255, 255, 255, .6);
+    color: rgb(22, 0, 73); /*fix for links in text on white background */
+    text-decoration: underline;
 }
 
 .d-bloc .navbar-toggle .icon-bar {
