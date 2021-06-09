@@ -147,6 +147,7 @@ a:hover {
 .d-bloc .navbar-brand:hover,
 .d-bloc a:hover .icon-sm,
 .d-bloc a:hover .icon-md,
+.d-bloc a:focus .icon-md,
 .d-bloc a:hover .icon-lg,
 .d-bloc a:hover .icon-xl,
 .d-bloc h1 a:hover,
@@ -459,11 +460,15 @@ nav .caret {
     margin: 0 0 5px 5px;
 }
 
-.btn-d,
+.btn-d {
+    color: #FFF;
+    background: rgba(0, 0, 0, .3);
+}
+
 .btn-d:hover,
 .btn-d:focus {
     color: #FFF;
-    background: rgba(0, 0, 0, .3);
+    background: rgba(124, 8, 0, 0.3);
 }
 /* 
 button {
@@ -791,7 +796,7 @@ h4 {
     color: #FFFFFF!important;
 }
 
-.btn-atomic-tangerine:hover {
+.btn-atomic-tangerine:hover, .btn-atomic-tangerine:focus {
     background: #B5583C!important;
     color: #FFFFFF!important;
 }
